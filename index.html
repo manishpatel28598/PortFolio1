@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ba41bac025.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Manish</span> <br> Kumar From India</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <!----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./myPhotos.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am experience in React for developing Web Application.
+                        Aspiring for a challenging career in Software Development as to use my learned skills and
+                        experience for best results.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Skill full in java and data structure with
+                                hands on experience on web development tools</li>
+                            <li><span>Web Development</span><br>I have worked on Frontend
+                                Technologies(HTML,CSS,Bootstrap,JavaScript, React and other libraries) and Backend technologies
+                                (Node Js,Firebase) and had done several projects. </li>
+                            <li><span>App Development</span><br>Designing and developing basics application for the
+                                web platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024, July - Current</span><br>Web Developer Intern at Bharat Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>BCA from J.C. Bose University YMCA, Faridabad</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------services---------->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>Offering expert web design services to create visually stunning, user-friendly websites that
+                        enhance your brand and engage your audience. Transform your online presence with custom,
+                        responsive designs.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2> Web Development</h2>
+                    <p>Specializing in web development, I create responsive, user-friendly websites with clean code and
+                        modern designs, ensuring seamless functionality and exceptional user experiences across all
+                        devices.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software Development</h2>
+                    <p>Providing comprehensive software development services, specializing in web applications, custom
+                        solutions, and seamless user experiences. Transforming ideas into functional, high-quality
+                        software tailored to your needs.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./work-1.png">
+                    <div class="layer">
+                        <h3>Web Development </h3>
+                        <p>
+                        <ul>
+                            <li>Netflix Clone: A functional clone of the Netflix streaming service.</li>
+                            
+                            <li>Invoicer: A simple invoice generator with discount and price calculation functionality</li>
+                        </ul>
+                        </p>
+                        <a href="invoicer-seven.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-2.png">
+                    <div class="layer">
+                        <h3>Interactive Applications and Games</h3>
+                        <p>
+                        <ul>
+                            <li>Simon Says Game: A classic memory game built with interactive elements.</li>
+                            <li>Tic Tac Toe Game: A digital version of the classic Tic Tac Toe game.</li>
+                            <li>Guessing App: Various guessing games implemented in different programming languages</li>
+                        </ul>
+                        </p>
+                        <a href="https://manishpatel28598.github.io/Tictactoegame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-3.png">
+                    <div class="layer">
+                        <h3>Utility and Productivity Tools
+                        </h3>
+                        <p>
+                        <ul>
+                            <li>To-Do App: A task management application built in different programming languages.</li>
+                            <li>Login Page: A user authentication system with a secure login interface. </li>
+                        </ul>
+                        </p>
+                        <a href="https://manishpatel28598.github.io/TO-DO-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------contact----------------------->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manishpatel.28598@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8825230381</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/manish_patel7025/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/+918825230381"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a
+                            href="www.linkedin.com/in/manish-kumar-patel-875154229"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/manishpatel28598"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/manishp34282912"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="./Manish kumar (1).pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyDtDvdL4BwNwuuxCsbmAbqIFeDQRSsMtPHhwxMm4a3JMAV66ibT-2YrJod7cyR40NaBg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response) // Corrected syntax
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
